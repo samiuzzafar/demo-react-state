@@ -1,5 +1,5 @@
-import React from 'react';
-//import React, {useState} from 'react';
+//import React from 'react';
+import React, {useState} from 'react';
 import './Room.css';
 
 /* 
@@ -15,10 +15,16 @@ status.
 temperature by 1 degree when clicked,
 */
 
+
+
 function Room() {
+
+  let [isLit, setLit] = useState(false);
+  let [currentTemp, setTemp] = useState(22);
+
   return (
-    <div className='room'>
-        
+    <div className={`room ${isLit? "lit": "dark"}`}> 
+            
         <h1>Welcome to this Room</h1>
         Here you can:
         <ol>
@@ -27,8 +33,15 @@ function Room() {
             <li>Increase/decrease temprature</li>
         </ol>
         <br/><br/>
-        
-        <button>Toggle Light</button>
+        Light is currently <b>{isLit? "ON":"OFF"}</b>
+        <br/><br/>
+        <button onClick={()=>setLit(!isLit)}>Toggle Light</button>
+        <br/><br/>
+        Temperature is currently <b>{currentTemp} C</b>
+        <br/><br/>
+        <button onClick={()=> setTemp(++currentTemp)}><b>+</b></button> 
+        <button onClick={()=> setTemp(--currentTemp)}><b>-</b></button>
+        <br/><br/>
     </div> 
 
   );

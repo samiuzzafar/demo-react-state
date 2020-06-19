@@ -5,3 +5,19 @@
     background-color: black;
     color: white;
 }
+
+.lit{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
