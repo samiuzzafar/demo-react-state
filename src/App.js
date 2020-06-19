@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import Room from './Room';
 
 function App() {
   return (
-    <div>ABC from App</div>    
+    <Room></Room>
   );
 }
 
