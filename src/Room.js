@@ -37,6 +37,8 @@ function Room() {
         <br/><br/>
         <button onClick={()=>setLit(!isLit)}>Toggle Light</button>
         <br/><br/>
+        <br/><br/>
+                
         Temperature is currently <b>{currentTemp} C</b>
         <br/><br/>
         <button onClick={()=> setTemp(++currentTemp)}><b>+</b></button> 
