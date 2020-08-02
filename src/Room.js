@@ -1,4 +1,3 @@
-//import React from 'react';
 import React, {useState} from 'react';
 import './Room.css';
 
@@ -14,8 +13,6 @@ status.
 • Add 2 more buttons: “+” and “-”. Then add onClick handlers that will increase or decrease the
 temperature by 1 degree when clicked,
 */
-
-
 
 function Room() {
 
@@ -41,8 +38,8 @@ function Room() {
                 
         Temperature is currently <b>{currentTemp} C</b>
         <br/><br/>
-        <button onClick={()=> setTemp(++currentTemp)}><b>+</b></button> 
-        <button onClick={()=> setTemp(--currentTemp)}><b>-</b></button>
+        <button onClick={()=> setTemp(++currentTemp)}><b> + </b></button> 
+        <button onClick={()=> setTemp(--currentTemp)}><b> - </b></button>
         <br/><br/>
     </div> 
 
